@@ -97,4 +97,4 @@ The goal is to help businesses take **data-driven decisions** to improve custome
 
 ## 👨‍💻 Author
 
-**Jyoti Basu**
+**Vasu**
