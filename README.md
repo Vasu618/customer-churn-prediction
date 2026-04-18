@@ -36,6 +36,7 @@ The goal is to help businesses take **data-driven decisions** to improve custome
 ### 🔹 Churn by Tenure
 
 ![Churn vs Tenure](images/Churn_tenure.png)
+
 *Customers in early tenure (0–12 months) are more likely to churn.*
 
 ---
@@ -49,7 +50,8 @@ The goal is to help businesses take **data-driven decisions** to improve custome
 
 ### 🔹 Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](images/Confusion_matrix.png)
+
 *Model performance showing correct vs incorrect predictions.*
 
 ---
