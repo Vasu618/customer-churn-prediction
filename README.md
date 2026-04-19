@@ -41,7 +41,7 @@ High monthly charges, fiber optic internet, and lack of online security were str
 ### 🔹 4. Model Confusion Matrix
 A breakdown of the model's classification performance, emphasizing our focus on correctly identifying actual churners.
 <br>
-<img src="images/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
+<img src="images/Confusion_matrix.png" alt="Confusion Matrix" width="400"/>
 
 ---
 
@@ -108,7 +108,7 @@ By deploying this model as an early-warning system, the business should implemen
 ## 📂 Project Structure
 
 * `Customer_Churn_Prediction_Retention_Strategy_System.ipynb` → Main analytical notebook containing EDA and model training.
-* `ARCHITECTURE.md` → Technical design and pipeline methodology.
+* `TDD.md` → Technical Design Document and pipeline methodology.
 * `images/` → Output directory for visualizations.
 
 ---
