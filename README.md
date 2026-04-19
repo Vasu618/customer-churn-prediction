@@ -1,102 +1,54 @@
-# 📊 Customer Churn Prediction & Retention Strategy System
+# Customer Churn Prediction & Retention Strategy System
 
-## 🚀 Project Overview
+## 📌 Project Overview
+This project is an end-to-end Machine Learning pipeline designed to predict customer churn and provide actionable business insights for retention strategies. By analyzing customer data, the model identifies key behaviors and demographic profiles associated with high churn risk.
 
-This project analyzes telecom customer data to understand why customers leave (churn) and predicts which customers are likely to churn.
+## 🚀 Features
+- **Exploratory Data Analysis (EDA):** Visualizing patterns in customer tenure, contracts, and monthly charges.
+- **Model Training:** Evaluating multiple models including Random Forest and Logistic Regression.
+- **Automated Model Selection:** Using `LazyPredict` to benchmark 20+ ML models quickly.
+- **Feature Importance & Interpretability:** Identifying the exact factors that drive customer churn (e.g., Month-to-month contracts, fiber optic internet, first 12 months of tenure).
+- **Business Strategy Generation:** Translating ML metrics into concrete retention strategies for stakeholders.
 
-The goal is to help businesses take **data-driven decisions** to improve customer retention and reduce revenue loss.
+## 🛠️ Technology Stack
+- **Python 3**
+- **Pandas & NumPy** (Data Manipulation)
+- **Scikit-Learn** (Machine Learning & Evaluation)
+- **LazyPredict** (Automated Model Benchmarking)
+- **Matplotlib & Seaborn** (Data Visualization)
+- **Jupyter Notebook** (Development Environment)
 
----
+## 📊 Key Findings
+1. **Contract Type:** Month-to-month contracts have the highest churn rate (~42%).
+2. **Tenure:** The first 12 months are the most critical period for customer retention (highest churn risk).
+3. **Model Performance:** Logistic Regression proved to be the best overall model (Accuracy: ~80%, F1-Score: ~80%), with high recall for detecting actual churners.
 
-## 🎯 Objectives
+## ⚙️ How to Run Locally
 
-* Identify key factors contributing to customer churn
-* Build a machine learning model to predict churn
-* Provide actionable retention strategies
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Vasu618/customer-churn-prediction.git
+   cd customer-churn-prediction
+   ```
 
----
+2. **Set up a virtual environment:**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+   ```
 
-## 📊 Key Insights
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-* 📉 Customers on **month-to-month contracts** have the highest churn (~42%)
-* ⏳ Customers in their **first 12 months** show the highest churn (~47%)
-* 💰 High monthly charges are linked to increased churn
+4. **Launch Jupyter Notebook:**
+   ```bash
+   jupyter notebook
+   ```
+   Open `Customer_Churn_Prediction_Retention_Strategy_System.ipynb` to view the analysis.
 
----
-
-## 📈 Key Visualizations
-
-### 🔹 Churn by Contract Type
-
-![Churn vs Contract](images/Churn_contract.png)
-*Month-to-month customers show significantly higher churn compared to long-term contracts.*
-
----
-
-### 🔹 Churn by Tenure
-
-![Churn vs Tenure](images/Churn_tenure.png)
-
-*Customers in early tenure (0–12 months) are more likely to churn.*
-
----
-
-### 🔹 Feature Importance (Random Forest)
-
-![Feature Importance](images/feature_importance.png)
-*Key drivers include contract type, tenure, and service-related features.*
-
----
-
-### 🔹 Confusion Matrix
-
-![Confusion Matrix](images/Confusion_matrix.png)
-
-*Model performance showing correct vs incorrect predictions.*
-
----
-
-## 🤖 Model Performance
-
-| Model               | Accuracy |
-| ------------------- | -------- |
-| Logistic Regression | 74%      |
-| Random Forest       | 78.6%    |
-
----
-
-## 💡 Business Impact
-
-* Identifies high-risk customers early
-* Enables targeted retention strategies
-* Helps reduce customer churn and revenue loss
-
----
-
-## 🛠️ Tech Stack
-
-* Python (Pandas, NumPy)
-* Data Visualization (Matplotlib, Seaborn)
-* Machine Learning (Scikit-learn)
-* Jupyter Notebook
-
----
-
-## 📂 Project Structure
-
-* `Customer_Churn_Prediction_Retention_Strategy_System.ipynb` → Main notebook
-* `images/` → Visualizations used in README
-
----
-
-## 🚀 Future Improvements
-
-* Hyperparameter tuning to improve accuracy
-* Deployment as a web app
-* Integration with real-time customer data
-
----
-
-## 👨‍💻 Author
-
-**Jyoti Basu**
+## 🤝 Next Steps / Improvements
+- Extract model logic into modular Python scripts (`train.py`, `predict.py`).
+- Develop a REST API using FastAPI for real-time churn prediction.
+- Implement SHAP (SHapley Additive exPlanations) for individual customer churn reasoning.
