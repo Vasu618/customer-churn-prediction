@@ -66,13 +66,26 @@ While `LazyPredict` showed that Logistic Regression achieved slightly higher ove
 
 ---
 
-## 💡 Business Impact & Strategy
+## 💡 Executive Summary & Retention Strategy
 
-By deploying this model, the business can:
-* **Identify high-risk customers early** and create early-warning systems.
-* **Target retention strategies**: e.g., offering discounts to move month-to-month users to 1-year contracts.
-* **Over-index on onboarding**: Focus heavily on customer service during the critical first 12 months.
-* Ultimately **reduce customer churn and protect revenue**.
+Machine learning is only as good as the business decisions it drives. Based on our model's feature importance and exploratory data analysis, we have derived the following strategic action plan:
+
+### 🚨 Identifying High-Risk Segments
+1. **Contract Vulnerability:** Customers on **Month-to-Month** contracts are highly flight-risk, with a staggering **42.71% churn rate**.
+2. **The "Make or Break" Year:** The most critical period for a customer is their first year. The **0-12 months** tenure band experiences a **47.44% churn rate**.
+3. **Price Sensitivity:** Customers in the highest monthly billing bracket (~$70–$90+) show an elevated churn rate of **37.51%**.
+
+### 🔑 Key Drivers (The "Why")
+* **Factors INCREASING Churn:** Having `Fiber optic` internet, high `TotalCharges`, subscribing to `Streaming Movies/TV`, and having `Multiple Lines`.
+* **Factors DECREASING Churn:** Longer `tenure`, `One-year` or `Two-year` contracts, and subscribing to `Online Security` and `Tech Support` add-ons.
+
+### 🎯 Actionable Retention Strategies
+By deploying this model as an early-warning system, the business should implement the following targeted strategies:
+
+* **Incentivize Long-Term Contracts:** Proactively target Month-to-Month customers with temporary discounts or bundled offers to upgrade them to 1-year or 2-year contracts.
+* **White-Glove Onboarding:** Since the first 12 months see the highest churn, over-index on customer support, check-ins, and onboarding during this critical window.
+* **Review High-Bill Pricing:** Evaluate the pricing structure for high-bill customers. Consider offering "loyalty rewards" or restructuring plans for those paying over $70/month to prevent bill shock.
+* **Push Retention Add-ons:** Actively cross-sell features like **Online Security** and **Tech Support**, as the model indicates these features strongly correlate with loyal, long-term customers.
 
 ---
 
